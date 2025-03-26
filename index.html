@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="quiz-list-screen">
+            <h1>Select a Quiz</h1>
+            <ul id="quiz-list">
+                <li data-quiz-id="quiz1">Quiz 1</li>
+                <li data-quiz-id="quiz2">Quiz 2</li>
+            </ul>
+        </div>
+
+        <div id="quiz-screen" class="hidden">
+            <h2 id="question-number"></h2>
+            <p id="question-statement"></p>
+            <ul id="options-list">
+                <li data-option="0"></li>
+                <li data-option="1"></li>
+                <li data-option="2"></li>
+                <li data-option="3"></li>
+            </ul>
+            <button id="check-answer-btn" disabled>Check Your Answer</button>
+            <button id="next-btn" class="hidden">Next</button>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <h1>Quiz Result</h1>
+            <p id="correct-answers"></p>
+            <p id="incorrect-answers"></p>
+            <div id="summary" class="hidden">
+                <h2>Question Summary</h2>
+                <ul id="summary-list"></ul>
+            </div>
+            <button id="back-to-quizzes-btn">Back to Quizzes</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

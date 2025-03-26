@@ -1,0 +1,120 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #cda9a9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#quiz-list-screen ul {
+    list-style: none;
+    padding: 0;
+}
+
+#quiz-list-screen li {
+    background-color: #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#quiz-list-screen li:hover {
+    background-color: #ce86e0;
+}
+
+#options-list {
+    list-style: none;
+    background-color: rgb(186, 182, 145);
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#options-list li {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#options-list li.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+#options-list li.correct {
+    background-color: lightgreen;
+}
+
+#options-list li.incorrect {
+    background-color: lightcoral;
+    color: white;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 10px auto;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button#next-btn {
+    background-color: #28a745;
+}
+
+button#back-to-quizzes-btn {
+    background-color: #6c757d;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.summary-item {
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.summary-item p {
+    margin: 5px 0;
+}
+
+.summary-item .correct {
+    color: green;
+    font-weight: bold;
+}
+
+.summary-item .incorrect {
+    color: red;
+    font-weight: bold;
+}
